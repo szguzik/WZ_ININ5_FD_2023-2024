@@ -1,5 +1,4 @@
 <script setup>
-const name = ref("NAWIGACJA");
 </script>
 <template>
     <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -20,6 +19,7 @@ const name = ref("NAWIGACJA");
       <a class="navbar-item">
         Home
       </a>
+      <NuxtLink to="/contact" class="navbar-item">Contact</NuxtLink>
 
       <a class="navbar-item">
         Documentation
@@ -62,25 +62,4 @@ const name = ref("NAWIGACJA");
     </div>
   </div>
 </nav>
-    <h1>{{ name }}</h1>
-    <ul>
-        <li><NuxtLink to="/">Strona główna</NuxtLink></li>
-        <li><nuxt-link to="/about">O nas (SPA)</nuxt-link></li>
-        <li class="mpa"><a href="/about">O nas (MPA)</a></li>
-        <li><nuxt-link to="/articles/1">Artykuł 1</nuxt-link></li>
-        <li><nuxt-link to="/articles/2">Artykuł 2</nuxt-link></li>
-    </ul>
 </template>
-<style scoped lang="scss">
-h1 {
-    color: red;
-}
-
-ul {
-    .mpa{
-        color: yellow
-    }
-
-}
-
-</style>
