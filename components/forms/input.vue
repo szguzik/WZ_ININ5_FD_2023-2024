@@ -26,7 +26,7 @@ watch(valueDef, (newVal, oldVal) => {
 </script>
 <template>
     {{ name }}
-    <input v-model="valueDef"><br>
+    <input class="input is-primary" type="text" placeholder="Wprowadz text" v-model="valueDef">
 </template>
 <style scoped>
 
